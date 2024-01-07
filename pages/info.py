@@ -14,14 +14,13 @@ def explanation_page():
         "1. **Correlation Strength = -1:**\n"
         "   - Inversely correlated predictions.\n"
         "   - If one learner predicts correctly, others predict incorrectly, and vice versa.\n"
-        "   - Collective accuracy determined by the minority prediction.\n"
         "   - Collective accuracy may be substantially lower than individual accuracy."
     )
     st.markdown(
         "2. **Correlation Strength = 0:**\n"
         "   - No correlation among weak learners.\n"
         "   - Predictions are independent.\n"
-        "   - Collective accuracy may show variations around individual accuracy."
+        "   - Collective accuracy may be substatially better than individual accuracy."
     )
     st.markdown(
         "3. **Correlation Strength = 1:**\n"
@@ -33,9 +32,7 @@ def explanation_page():
 
     st.write(
         "The app displays the collective accuracy and a line chart showing how the cumulative accuracy evolves over "
-        "multiple simulation runs. The 'Individual Estimates' section includes a heatmap where each row represents a "
-        "simulation, and each column represents an individual learner. The color indicates whether the learner's estimate "
-        "was correct (1) or incorrect (0)."
+        "multiple simulation runs."
     )
 
 explanation_page()
