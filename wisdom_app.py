@@ -79,7 +79,7 @@ def main():
     st.sidebar.header("Simulation Settings")
     num_learners = st.sidebar.slider("Number of Learners", min_value=1, max_value=5000, value=100)
     num_simulations = st.sidebar.slider("Number of Simulations", min_value=1, max_value=50000, value=25000)
-    individual_accuracy = st.sidebar.slider("Individual Accuracy", min_value=0.1, max_value=0.9, value=0.51, step=0.01)
+    individual_accuracy = st.sidebar.slider("Individual Accuracy", min_value=0.1, max_value=1.0, value=0.51, step=0.01)
     correlation_strength = st.sidebar.slider("Correlation Strength", min_value=-1.0, max_value=1.0, value=0.0, step=1.0, format="%d")
 
     # Simulation
