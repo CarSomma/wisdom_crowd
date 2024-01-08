@@ -97,18 +97,18 @@ def main():
    
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=np.arange(1, num_simulations + 1), y=cumulative_accuracies,
-                             mode='lines', name='Cumulative Accuracy',
+                             mode='lines', name='Collective Accuracy',
                              line=dict(color='#4a7c59', dash='dash', width=2)))
     fig.update_layout(
         xaxis=dict(title='Number of Simulations'),
-        yaxis=dict(title='Cumulative Accuracy'),
+        yaxis=dict(title='Collective Accuracy'),
         title='Collective Accuracy Convergence',
         template='plotly_dark'
     )
     st.plotly_chart(fig)
     st.write(
-        "The line chart above illustrates how the cumulative accuracy evolves over "
-        "multiple simulation runs, demonstrating the convergence towards the expected accuracy."
+        "The line chart above illustrates how the collective accuracy evolves over "
+        "multiple simulation runs."
     )
     # Display results
     collective_accuracy_percentage = mean_collective * 100
