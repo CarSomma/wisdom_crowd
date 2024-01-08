@@ -31,8 +31,8 @@ def explanation_page():
     )
 
     st.write(
-        "The app displays the collective accuracy and a line chart showing how the cumulative accuracy evolves over "
+        "The app displays the collective accuracy and a line chart showing how the collective accuracy evolves over "
         "multiple simulation runs."
     )
-
-explanation_page()
+if __name__ == '__main__':
+    explanation_page()
