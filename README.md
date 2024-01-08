@@ -29,3 +29,4 @@ python -m venv .streamlit_env
 # Install Streamlit and Additional Libraries
 pip install -r requirements.txt
 ```
+Feel free to play with the [Wisdom Streamlit app](https://macefactorization-wisdom.streamlit.app/).
