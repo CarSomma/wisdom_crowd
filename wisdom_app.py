@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-from io import BytesIO
 import plotly.graph_objects as go
 
 def simulate_collective_accuracy(num_learners, num_simulations, individual_accuracy, correlation_strength):
